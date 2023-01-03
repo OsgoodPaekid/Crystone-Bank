@@ -4,7 +4,20 @@
     box-sizing: border-box;
 }
 
+.logo {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.midpoint {
+    display: flex;
+}
+
 .social ul {
     display: flex;
     list-style-type: none;
+    /* justify-content: center; */
+    justify-content: space-between;
+    margin: 0 400px;
 }
+
