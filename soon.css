@@ -21,3 +21,14 @@
     margin: 0 400px;
 }
 
+.space{
+    display: inline-block;
+    position: relative;
+    background: whitesmoke;
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;  
+    cursor: pointer; 
+    transition: 0.4s; 
+    -webkit-transition: 0.4s;
+}
