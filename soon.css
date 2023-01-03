@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .social {
+    display: flex;
+} */
+
+.social ul li {
+    text-decoration: none;
+    font-size: 40px;
+    color: green;
+    background: #000;
+    display: inline-block;
+}
