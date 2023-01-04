@@ -11,23 +11,28 @@ body{
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
+
 .logo {
     width: 300px;
     align-items: center;
     margin-left: 500px;
 }
+
 .wrapper{
     display: flex;
     justify-content: space-around;
     padding: 0 50px;
 }
+
 .midpoint {
     display: flex;
 }
+
 .content{
     line-height: 1.3;
     width: 50%;
 }
+
 .social ul {
     display: flex;
     list-style-type: none;
@@ -35,15 +40,18 @@ body{
     justify-content: space-between;
     margin: 0 400px;
 }
+
 h2{
     font-size: 4rem;
     align-items: center;
 }
+
 p{
     font-size: 1.rem;
     text-transform: capitalize;
     margin: 20px 0;
 }
+
 .iphone{
     width: 200px;
 }
@@ -53,6 +61,7 @@ p{
     position: relative;
 
 }
+
 input{
     position: relative;
     width: 400px;
@@ -62,7 +71,8 @@ input{
     background: transparent;
     border: 1px solid goldenrod;
 }
-button{
+
+.button button{
     display: inline-block;
     position: absolute;
     height: 100%;
