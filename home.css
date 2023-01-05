@@ -12,7 +12,7 @@ body{
 .navbar {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     height: 150px;
 }
@@ -23,14 +23,19 @@ body{
 
 .nav_link {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
+    grid-template-columns: 120px 120px 120px;
+    grid-gap: 40px;
     list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
 }
 
 .nav_link li a {
     text-decoration: none;
-    display: inline-block;
+    color: green;
+    font-size: 20px;
 }
 
 .login {
@@ -39,6 +44,12 @@ body{
     padding: 10px 25px;
     border-radius: 10px;
     color: white;
+    text-align: center;
+}
+
+.navbar .login {
+    display: block;
+    float: left;
 }
 
 .logo {
@@ -57,20 +68,27 @@ body{
 .wrapper{
     display: grid;
     grid-template-columns: auto auto;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
 }
 
 .content{
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 30px auto;
 }
 
 .social ul {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 100px 100px 100px 100px;
     list-style-type: none;
     margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 h2{
@@ -85,7 +103,7 @@ p{
 }
 
 .iphone{
-    width: 500px;
+    width: 350px;
 }
 
 .input{
@@ -96,22 +114,23 @@ p{
 
 input{
     position: relative;
-    width: 400px;
+    width: 500px;
+    height: 50px;
     padding: 10px;
     border-radius: 20px;  
     cursor: pointer; 
     background: transparent;
-    border: 1px solid goldenrod;
+    border: 2px solid goldenrod;
 }
 
-.button button{
+.button button {
     display: inline-block;
     position: absolute;
-    height: 100%;
-    width:30%;
+    height: 36px;
+    width:25%;
     background: green;
     border: none;
-    border-radius: 20px;
-    top: 0;
-    right: 4px;
+    border-radius: 15px;
+    top: 7px;
+    right: 7px;
 }
