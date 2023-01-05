@@ -105,8 +105,13 @@ body{
 }
 
 .social ul li a img{
-    width: 24px;
-    height:24px;
+    width: 27px;
+    height:27px;
+}
+
+.social ul li a img:hover{
+    background: green;
+    color: white;
 }
 
 h2{
