@@ -33,13 +33,14 @@ body{
     position: relative;
 }
 
-.nav_link li a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+.navbar ul li{
+    list-style: none;
+    display: grid;
+    margin: 0 20px;
+    position: relative;
 }
 
-.nav_link li a::after{
+.nav_link li::after{
     content:'';
     height: 3px;
     width: 0;
@@ -48,6 +49,13 @@ body{
     bottom: -10px;
     transition: 0.5s;
     position: absolute;
+}
+
+
+.nav_link li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 
 .login {
