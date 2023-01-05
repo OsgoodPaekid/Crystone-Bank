@@ -105,13 +105,14 @@ body{
 }
 
 .social ul li a img{
-    width: 27px;
-    height:27px;
+    width: 35px;
+    height:35px;
 }
 
 .social ul li a img:hover{
     background: green;
     color: white;
+    border-radius: 50%;
 }
 
 h2{
