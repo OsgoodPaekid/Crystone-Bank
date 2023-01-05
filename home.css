@@ -104,6 +104,11 @@ body{
     padding: 20px;
 }
 
+.social ul li a{
+    width: 24px;
+    height:24px;
+}
+
 h2{
     font-size: 4rem;
     align-items: center;
