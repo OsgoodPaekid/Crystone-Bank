@@ -62,7 +62,7 @@ body{
 
 .navbar .login {
     display: flex;
-    float: left;
+    /*float: left;*/
 }
 
 .logo {
@@ -130,7 +130,7 @@ input{
     width: 500px;
     height: 50px;
     padding: 10px;
-    border-radius: 20px;  
+    border-radius: 15px;  
     cursor: pointer; 
     background: transparent;
     border: 2px solid goldenrod;
@@ -142,7 +142,7 @@ input{
     height: 36px;
     width:25%;
     background: green;
-    color: white
+    color: white;
     border: none;
     border-radius: 10px;
     top: 7px;
