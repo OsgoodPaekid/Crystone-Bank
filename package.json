@@ -1,0 +1,20 @@
+{
+    "name": "Crystone-Bank",
+    "version": "1.0.0",
+    "description": "A Fintech Startup",
+    "scripts": {
+        "build": "echo \"No build specified\" && exit 1",
+        "test": "echo \"No test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Developer-in-Tech/Crystone-Bank.git"
+    },
+    "author": "Crystone-Bank",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Developer-in-Tech/Crystone-Bank/issues"
+    },
+    "homepage": "https://github.com/Developer-in-Tech/Crystone-Bank#readme"
+}
