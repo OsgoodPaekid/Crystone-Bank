@@ -144,15 +144,16 @@ label[for="toggle_nav"] {
   background: rgb(231, 231, 231);
   margin: 10px auto;
   border-radius: 10px;
-  width: 1000px;
+  width: 100%;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 5fr 3fr;
   align-items: center;
   text-align: center;
-  padding: 50px;
+  padding: 10px;
+  width: 100%;
 }
 
 .content {
@@ -161,6 +162,62 @@ label[for="toggle_nav"] {
   align-items: center;
   margin: 30px auto;
 }
+
+h2 {
+  font-size: 4rem;
+  align-items: center;
+}
+
+p {
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+/* .iphone {
+  width: 350px;
+} */
+
+.form_section {
+}
+
+.myform {
+  height: 50px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid goldenrod;
+  gap: 10px;
+}
+
+.myform input {
+  background: transparent;
+  flex: 1;
+}
+
+.myform button {
+  height: 36px;
+  padding: 0 20px;
+  background: green;
+  color: white;
+  border-radius: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* ============================================= */
+.wrapper .right {
+  background-color: aqua;
+}
+.wrapper .right img {
+  width: 100%;
+}
+
+/* ============================================= */
+/* ============================================= */
 
 .social ul {
   display: grid;
@@ -181,48 +238,4 @@ label[for="toggle_nav"] {
 .social ul li a img:hover {
   background: green;
   border-radius: 50%;
-}
-
-h2 {
-  font-size: 4rem;
-  align-items: center;
-}
-
-p {
-  font-size: 1rem;
-  text-transform: capitalize;
-  margin: 20px 0;
-}
-
-.iphone {
-  width: 350px;
-}
-
-.input {
-  display: inline-block;
-  position: relative;
-}
-
-input {
-  position: relative;
-  width: 500px;
-  height: 50px;
-  padding: 10px;
-  border-radius: 15px;
-  cursor: pointer;
-  background: transparent;
-  border: 2px solid goldenrod;
-}
-
-.button button {
-  display: inline-block;
-  position: absolute;
-  height: 36px;
-  width: 25%;
-  background: green;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  top: 7px;
-  right: 7px;
 }
