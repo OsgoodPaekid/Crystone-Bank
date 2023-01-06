@@ -1,152 +1,228 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  list-style-type: none;
 }
 
-body{
-    font-family: 'poppins';
-    margin: 0 5%;
+:root {
+  width: 99.999%;
+  overflow: hidden auto;
 }
 
-.navbar {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    /* height: 150px; */
+body {
+  width: 99.999%;
+  font-family: "poppins";
+  padding: 0 3%;
+  overflow: hidden auto;
 }
 
-.nav_logo {
-    width: 180px;
+.header__navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
 }
 
-.nav_link {
-    display: grid;
-    grid-template-columns: 120px 120px 120px;
-    grid-gap: 40px;
-    list-style-type: none;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-left: 500px;
+.top_logo {
+  width: 40%;
+  min-width: 100px;
 }
 
-.nav_link li a {
-    text-decoration: none;
-    color: green;
-    font-size: 20px;
+.header__navbar__nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__navbar__nav__ul {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: space-evenly;
+  flex: 1;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__navbar__nav__ul li a {
+  text-decoration: none;
+  color: green;
+  font-size: 20px;
+}
+
+.header__navbar__nav_login {
+  text-decoration: none;
+  background-color: green;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  display: block;
 }
 
 #toggle_nav {
-    display: none;
+  display: none;
 }
 
 label[for="toggle_nav"] {
-    font-size: 20px;
-    display: none;
-    transition: all 0.2s ease-in;
+  font-size: 20px;
+  display: none;
+  transition: all 0.2s ease-in;
 }
 
-.login {
-    text-decoration: none;
-    background-color: green;
-    padding: 10px 25px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-}
+@media screen and (max-width: 800px) {
+  .header__navbar__nav {
+    justify-content: end;
+    flex-direction: row;
+    gap: 15%;
+    z-index: 100;
+  }
 
-.logo {
-    width: 300px;
-    align-items: center;
-    margin-left: 500px;
-}
+  .header__navbar__nav__ul {
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 90%;
+    left: -120%;
+    right: 120%;
+    overflow: hidden;
+    padding: 20px 0;
+    background-color: rgba(0, 128, 0, 0.193);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
 
-.coming_soon {
-    background: rgb(231, 231, 231);
-    margin: 10px auto;
-    border-radius: 10px;
-    width: 1000px;
-} 
+  .header__navbar__nav__ul li a {
+    color: black;
+  }
 
-.wrapper{
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    text-align: center;
-    padding: 50px;
-}
+  #toggle_nav:checked ~ .header__navbar__nav__ul {
+    right: 0;
+    left: 0;
+  }
 
-.content{
-    text-align: center;
+  label[for="toggle_nav"] {
+    padding: 2px 0;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  label[for="toggle_nav"] .label__p {
+    border: 1px solid black;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
+    width: 60px;
+    gap: 2px;
+    line-height: 0;
+    padding: 5px;
+    border-radius: 50%;
+    aspect-ratio: 1/1 !important;
+  }
+
+  label[for="toggle_nav"] p {
+    font-size: 20px;
+  }
+
+  #toggle_nav:checked ~ label[for="toggle_nav"] {
+    transform: rotate(90deg);
+  }
+}
+
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+
+.coming_soon {
+  background: rgb(231, 231, 231);
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 1000px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.content {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
 }
 
 .social ul {
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    list-style-type: none;
-    margin: auto;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 27px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  list-style-type: none;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 27px;
 }
 
-.social ul li a img{
-    width: 35px;
-    height:35px;
+.social ul li a img {
+  width: 35px;
+  height: 35px;
 }
 
-.social ul li a img:hover{
-    background: green;
-    border-radius: 50%;
+.social ul li a img:hover {
+  background: green;
+  border-radius: 50%;
 }
 
-h2{
-    font-size: 4rem;
-    align-items: center;
+h2 {
+  font-size: 4rem;
+  align-items: center;
 }
 
-p{
-    font-size: 1.rem;
-    text-transform: capitalize;
-    margin: 20px 0;
+p {
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 20px 0;
 }
 
-.iphone{
-    width: 350px;
+.iphone {
+  width: 350px;
 }
 
-.input{
-    display: inline-block;
-    position: relative;
-
+.input {
+  display: inline-block;
+  position: relative;
 }
 
-input{
-    position: relative;
-    width: 500px;
-    height: 50px;
-    padding: 10px;
-    border-radius: 15px;  
-    cursor: pointer; 
-    background: transparent;
-    border: 2px solid goldenrod;
+input {
+  position: relative;
+  width: 500px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid goldenrod;
 }
 
 .button button {
-    display: inline-block;
-    position: absolute;
-    height: 36px;
-    width:25%;
-    background: green;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    top: 7px;
-    right: 7px;
+  display: inline-block;
+  position: absolute;
+  height: 36px;
+  width: 25%;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  top: 7px;
+  right: 7px;
 }
