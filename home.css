@@ -77,66 +77,6 @@ label[for="toggle_nav"] {
   transition: all 0.2s ease-in;
 }
 
-@media screen and (max-width: 800px) {
-  .header__navbar__nav {
-    justify-content: end;
-    flex-direction: row;
-    gap: 15%;
-    z-index: 100;
-  }
-
-  .header__navbar__nav__ul {
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 90%;
-    left: -120%;
-    right: 120%;
-    overflow: hidden;
-    padding: 20px 0;
-    background-color: rgba(0, 128, 0, 0.193);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-
-  .header__navbar__nav__ul li a {
-    color: black;
-  }
-
-  #toggle_nav:checked ~ .header__navbar__nav__ul {
-    right: 0;
-    left: 0;
-  }
-
-  label[for="toggle_nav"] {
-    padding: 2px 0;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  label[for="toggle_nav"] .label__p {
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    gap: 2px;
-    line-height: 0;
-    padding: 5px;
-    border-radius: 50%;
-    aspect-ratio: 1/1 !important;
-  }
-
-  label[for="toggle_nav"] p {
-    font-size: 20px;
-  }
-
-  #toggle_nav:checked ~ label[for="toggle_nav"] {
-    transform: rotate(90deg);
-  }
-}
-
 /* ================================================================= */
 /* ================================================================= */
 /* ================================================================= */
