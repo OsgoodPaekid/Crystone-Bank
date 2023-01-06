@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: none;
+  list-style-type: none;
+  /* outline: 2px solid red; */
+}
+
+:root {
+  width: 99.999%;
+  overflow: hidden auto;
+}
+
+body {
+  width: 99.999%;
+  font-family: "poppins";
+  padding: 0 3%;
+  overflow: hidden auto;
+}
+
+.header__navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+.top_logo {
+  width: 40%;
+  min-width: 100px;
+}
+
+.header__navbar__nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__navbar__nav__ul {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: space-evenly;
+  flex: 1;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__navbar__nav__ul li a {
+  text-decoration: none;
+  color: green;
+  font-size: 20px;
+}
+
+.header__navbar__nav_login {
+  text-decoration: none;
+  background-color: green;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+#toggle_nav {
+  display: none;
+}
+
+label[for="toggle_nav"] {
+  font-size: 20px;
+  display: none;
+  transition: all 0.2s ease-in;
+}
+
+@media screen and (max-width: 800px) {
+  .header__navbar__nav {
+    justify-content: end;
+    flex-direction: row;
+    gap: 15%;
+    z-index: 100;
+  }
+
+  .header__navbar__nav__ul {
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 90%;
+    left: -120%;
+    right: 120%;
+    overflow: hidden;
+    padding: 20px 0;
+    background-color: rgba(0, 128, 0, 0.193);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .header__navbar__nav__ul li a {
+    color: black;
+  }
+
+  #toggle_nav:checked ~ .header__navbar__nav__ul {
+    right: 0;
+    left: 0;
+  }
+
+  label[for="toggle_nav"] {
+    padding: 2px 0;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  label[for="toggle_nav"] .label__p {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    gap: 2px;
+    line-height: 0;
+    padding: 5px;
+    border-radius: 50%;
+    aspect-ratio: 1/1 !important;
+  }
+
+  label[for="toggle_nav"] p {
+    font-size: 20px;
+  }
+
+  #toggle_nav:checked ~ label[for="toggle_nav"] {
+    transform: rotate(90deg);
+  }
+}
+
+/* ================================================================= */
+/* ================================================================= */
+/* ================================================================= */
+
+.coming_soon {
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* margin: 30px auto; */
+}
+
+h2 {
+  font-size: 4rem;
+  align-items: center;
+}
+
+p {
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+
+.form_section {
+    display: flex;
+    justify-content: center;
+}
+
+.myform {
+  height: 50px;
+  width: 95%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid goldenrod;
+  gap: 10px;
+}
+
+.myform input {
+  background: transparent;
+  flex: 1;
+}
+
+.myform button {
+  height: 36px;
+  padding: 0 20px;
+  background: green;
+  color: white;
+  border-radius: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* ============================================= */
+.wrapper .right {
+  width: 100%;
+}
+.wrapper .right img {
+  width: 100%;
+}
+
+/* ============================================= */
+/* ============================================= */
+
+.social ul {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  list-style-type: none;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 27px;
+}
+
+.social ul li a img {
+  width: 30px;
+  height: 30px;
+}
+
+.social ul li a img:hover {
+  background: green;
+  border-radius: 50%;
+}
