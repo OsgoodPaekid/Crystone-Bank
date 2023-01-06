@@ -5,6 +5,7 @@
   border: 0;
   outline: none;
   list-style-type: none;
+  /* outline: 2px solid red; */
 }
 
 :root {
@@ -160,7 +161,7 @@ label[for="toggle_nav"] {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 30px auto;
+  /* margin: 30px auto; */
 }
 
 h2 {
@@ -174,12 +175,9 @@ p {
   margin: 20px 0;
 }
 
-/* .iphone {
-  width: 350px;
-} */
 
-.form_section {
-}
+/* .form_section {
+} */
 
 .myform {
   height: 50px;
@@ -210,7 +208,7 @@ p {
 
 /* ============================================= */
 .wrapper .right {
-  background-color: aqua;
+  width: 100%;
 }
 .wrapper .right img {
   width: 100%;
@@ -220,8 +218,9 @@ p {
 /* ============================================= */
 
 .social ul {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
   list-style-type: none;
   margin: auto;
   align-items: center;
@@ -231,8 +230,8 @@ p {
 }
 
 .social ul li a img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .social ul li a img:hover {
