@@ -14,7 +14,7 @@ body{
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    /*height: 150px;*/
+    /* height: 150px; */
 }
 
 .nav_logo {
@@ -48,11 +48,6 @@ body{
     margin-left: 40px;
 }
 
-.navbar .login {
-    display: flex;
-    /*float: left;*/
-}
-
 .logo {
     width: 300px;
     align-items: center;
@@ -63,7 +58,7 @@ body{
     background: rgb(231, 231, 231);
     margin: auto;
     border-radius: 10px;
-    width: 1200px;
+    width: 1000px;
 } 
 
 .wrapper{
@@ -83,7 +78,7 @@ body{
 
 .social ul {
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
     list-style-type: none;
     margin: auto;
     align-items: center;
